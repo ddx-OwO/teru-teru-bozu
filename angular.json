@@ -130,6 +130,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "teru-teru-bozu"
+    }
+  },
+  "defaultProject": "teru-teru-bozu",
+  "cli": {
+    "analytics": false
+  }
 }
