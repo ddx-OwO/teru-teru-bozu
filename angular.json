@@ -18,7 +18,7 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "./tailwind-config.js"
+              "path": "./webpack.config.js"
             },
             "outputPath": "dist/teru-teru-bozu",
             "index": "src/index.html",
@@ -71,7 +71,7 @@
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
             "customWebpackConfig": {
-              "path": "./tailwind-config.js"
+              "path": "./webpack.config.js"
             },
             "browserTarget": "teru-teru-bozu:build"
           },
