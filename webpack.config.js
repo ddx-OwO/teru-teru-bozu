@@ -5,6 +5,10 @@
 //   variants: {},
 //   plugins: []
 // }
+const purgecss = require('@fullhuman/postcss-purgecss')({
+    content: ['./**/*.html'],
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+});
 module.exports = {
   module: {
     rules: [
@@ -17,7 +21,8 @@ module.exports = {
           plugins: () => [
             require('postcss-import'),
             require('tailwindcss'),
-            require('autoprefixer')
+            require('autoprefixer'),
+            ...process.env.NODE_ENV === 'production' ? [purgecss] : []
           ]
         }
       }
