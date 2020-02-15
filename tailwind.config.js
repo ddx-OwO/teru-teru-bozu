@@ -3,6 +3,16 @@ module.exports = {
     fontFamily: {
       body: ['\'Montserrat\'', 'sans-serif']
     },
+    screens: {
+      'xs': {'max': '575px'},
+      'sm': {'max': '767px'},
+      'sm-only': {'min': '576px', 'max': '767px'},
+      'md': {'max': '992px'},
+      'md-only': {'min': '768px', 'max': '992px'},
+      'lg': {'max': '1200'},
+      'lg-only': {'min': '993px', 'max': '1200px'},
+      'xl': {'min': '1201px'},
+    },
     extend: {
       colors: {
         'theme-blue': {
