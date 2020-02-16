@@ -1,1 +1,8 @@
-<p>home works!</p>
+<section id="main-weather" class="my-8">
+  <app-main-weather-card></app-main-weather-card>
+</section>
+<section id="cities-weather" class="flex flex-row flex-wrap justify-between overflow-hidden -mx-3">
+  <div class="cities-weather-item" *ngFor="let v of data.result">
+    <app-small-weather-card></app-small-weather-card>
+  </div>
+</section>

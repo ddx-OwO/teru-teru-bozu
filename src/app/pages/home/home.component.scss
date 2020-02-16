@@ -1,3 +1,13 @@
-.test-s {
-  color: #fff;
+// .cities-item {
+//   @apply overflow-hidden w-full my-3 px-3;
+// }
+
+.cities-weather-item {
+  @apply w-1/4 my-3 px-3;
+  @media (max-width: 992px) {
+    @apply w-1/2;
+  }
+  @screen md {
+    @apply w-full;
+  }
 }
