@@ -4,14 +4,14 @@ module.exports = {
       body: ['\'Montserrat\'', 'sans-serif']
     },
     screens: {
-      'xs': {'max': '575px'},
-      'sm': {'max': '767px'},
-      'sm-only': {'min': '576px', 'max': '767px'},
-      'md': {'max': '992px'},
-      'md-only': {'min': '768px', 'max': '992px'},
-      'lg': {'max': '1200'},
-      'lg-only': {'min': '993px', 'max': '1200px'},
       'xl': {'min': '1201px'},
+      'lg-only': {'min': '993px', 'max': '1200px'},
+      'lg': {'max': '1200'},
+      'md-only': {'min': '768px', 'max': '992px'},
+      'md': {'max': '992px'},
+      'sm-only': {'min': '576px', 'max': '767px'},
+      'sm': {'max': '767px'},
+      'xs': {'max': '575px'},
     },
     extend: {
       colors: {
